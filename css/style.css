@@ -9718,5 +9718,25 @@ textarea.form-control {
 }
 
 .mi{
-  padding: 1px 80px;
+  margin-left: 150px;
+  margin-right: 0px;
+  float: right;
 }
+
+.accolades-list{
+  list-style-type: square;
+  float: center;
+  color: #ffffff;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:smaller;
+}
+
+.accolades-heading{
+  font-style: italic;
+  color:#ffffff; 
+  padding-top: 10px;
+  font-size: medium;
+  font-weight: bold;
+  float: left;
+}
+
