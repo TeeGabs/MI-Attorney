@@ -12,7 +12,7 @@
   --red: #dc3545;
   --orange: #fd7e14;
   --yellow: #ffc107;
-  --green: #28a745;
+  --green: #6828a7;
   --teal: #20c997;
   --cyan: #17a2b8;
   --white:  #FFFFFF;
@@ -1766,7 +1766,7 @@ textarea.form-control {
   font-size: 0.875rem;
   line-height: 1.5;
   color:  #FFFFFF;
-  background-color: rgba(40, 167, 69, 0.9);
+  background-color: rgba(0, 153, 209, 0.9);
   border-radius: 0.25rem; }
 
 .was-validated .form-control:valid, .form-control.is-valid {
@@ -9718,9 +9718,17 @@ textarea.form-control {
 }
 
 .mi{
-  margin-left: 150px;
-  margin-right: 0px;
+  margin-left: 200px;
+  background-color:inherit;
+  margin-right: -15px;
   float: right;
+}
+
+.mi-nav{
+  border-radius: 50%;
+  text-align: center;
+  background-color: white;
+  border: none;
 }
 
 .accolades-list{
