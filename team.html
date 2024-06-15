@@ -21,6 +21,25 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+		window.onscroll = function() {scrollFunction()}
+		
+		function scrollFunction() {
+		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+			document.getElementsByClassName("logoStyle")[0].style.color = "black";
+			document.getElementsByClassName("logoStyle")[1].style.backgroundColor = "black";
+			document.getElementsByClassName("logoStyle")[2].style.backgroundColor = "black";
+			document.getElementsByClassName("logoStyle")[3].style.backgroundColor = "black";
+		}
+		else{
+			document.getElementsByClassName("logoStyle")[0].style.color = "white";
+			document.getElementsByClassName("logoStyle")[1].style.backgroundColor = "white";
+			document.getElementsByClassName("logoStyle")[2].style.backgroundColor = "white";
+			document.getElementsByClassName("logoStyle")[3].style.backgroundColor = "white";}
+		}
+	  </script>
+
   </head>
   <body>
     
@@ -43,10 +62,10 @@
 	        </ul>
 	      </div>
 		  <div class="mi">
-			<p style="float: center; margin-bottom: 0px; color: rgb(0, 0, 0);">M.I Attorneys</p>
-            <button style="float: center; height: 10px; width: 10px; margin-left: 20px; background-color: rgb(0, 0, 0); border-radius: 50%; border: none;"><span></span> </button>
-            <button style="float: center; height: 10px; width: 10px; background-color: rgb(0, 0, 0); border-radius: 50%; border: none;"><span></span> </button>
-            <button style="float: center; height: 10px; width: 10px; background-color: rgb(0, 0, 0); border-radius: 50%; border: none;"><span></span> </button>
+			<p class="logoStyle" style="float: center; margin-bottom: 0px;">M.I Attorneys</p>
+          <button class="logoStyle" style="float: center; height: 10px; width: 10px; margin-left: 20px; border-radius: 50%; border: none;"><span></span> </button>
+          <button class="logoStyle" style="float: center; height: 10px; width: 10px; border-radius: 50%; border: none;"><span></span> </button>
+          <button class="logoStyle" style="float: center; height: 10px; width: 10px; border-radius: 50%; border: none;"><span></span> </button>
 		  </div>
 	    </div>
 	  </nav>
