@@ -21,6 +21,25 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+      window.onscroll = function() {scrollFunction()}
+      
+      function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementsByClassName("logoStyle")[0].style.color = "black";
+          document.getElementsByClassName("logoStyle")[1].style.backgroundColor = "black";
+          document.getElementsByClassName("logoStyle")[2].style.backgroundColor = "black";
+          document.getElementsByClassName("logoStyle")[3].style.backgroundColor = "black";
+      }
+      else{
+          document.getElementsByClassName("logoStyle")[0].style.color = "white";
+          document.getElementsByClassName("logoStyle")[1].style.backgroundColor = "white";
+          document.getElementsByClassName("logoStyle")[2].style.backgroundColor = "white";
+          document.getElementsByClassName("logoStyle")[3].style.backgroundColor = "white";}
+      }
+    </script>
+
   </head>
   <body>
   
@@ -42,10 +61,10 @@
 	        </ul>
         </div>
         <div class="mi">
-          <p style="float: center; margin-bottom: 0px; color: rgb(0, 0, 0);">M.I Attorneys</p>
-          <button style="float: center; height: 10px; width: 10px; margin-left: 20px; background-color: rgb(0, 0, 0); border-radius: 50%; border: none;"><span></span> </button>
-          <button style="float: center; height: 10px; width: 10px; background-color: rgb(0, 0, 0); border-radius: 50%; border: none;"><span></span> </button>
-          <button style="float: center; height: 10px; width: 10px; background-color: rgb(0, 0, 0); border-radius: 50%; border: none;"><span></span> </button>
+          <p class="logoStyle" style="float: center; margin-bottom: 0px;">M.I Attorneys</p>
+          <button class="logoStyle" style="float: center; height: 10px; width: 10px; margin-left: 20px; border-radius: 50%; border: none;"><span></span> </button>
+          <button class="logoStyle" style="float: center; height: 10px; width: 10px; border-radius: 50%; border: none;"><span></span> </button>
+          <button class="logoStyle" style="float: center; height: 10px; width: 10px; border-radius: 50%; border: none;"><span></span> </button>
         </div>
       </div>
 	  </nav>
@@ -72,11 +91,11 @@
     <section class="ftco-section ftco-no-pt ftco-no-pb">
     	<div class="container">
     		<div class="row d-flex">
-    			<div class="col-md-6 d-flex" style="background-image:url(images/Director.png);">
+    			<div class="col-md-6 d-flex" style="background-image:url(images/Director2.png);">
     			</div>
     			<div class="col-md-6 pl-md-5">
 		          <div class="col-md-12 heading-section ftco-animate">
-		          	<span class="subheading">Welcome to MI Attorneys</span>
+		          	<span class="subheading" style="padding-top: 20px;">Welcome to MI Attorneys</span>
 		            <h3 class="mb-4" style="color:#000000; font-size:large; font-weight: bold;" >Think contemporary. Think MI inc.</h3>
 		            <p style="color:#000000; font-style:normal; font-weight:450;">As the Managing Director, I extend a warm greeting to all our esteemed clients, partners, and stakeholders. 
                    At M. I Attorneys, we are committed to excellence in legal service delivery, driven by a passion for justice 
@@ -105,24 +124,23 @@
       </div>
     </section> -->
     
-    <section class="ftco-section testimony-section">
+    <section class="ftco-section testimony-section" >
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-          	<span class="subheading">Testimonials</span>
+          	<span class="subheading" >Testimonials</span>
             <h2 class="mb-4" style="color: black; font-weight:bolder;">Happy Clients</h2>
           </div>
         </div>
         
-        <div class="row ftco-animate">
-          <div class="col-md-12"> 
+        <div class="row ftco-animate" >
+          <div class="col-md-12">
             <div class="carousel-testimony owl-carousel ftco-owl">
-              
               <div class="item">
                 <div class="testimony-wrap py-4">
                   <div class="text">
                     <p class="mb-4" style="color:#000000; font-style:normal; font-style: italic; font-weight:500; font-size: small;">
-                      "Munyangane Itani Attorneys defended the State Information Technology Agency in a law suite of R3 000 000 000.00. The service that MI Attorneys provides is of 
+                      "Munyangane Itani Attorneys defended the State Information Technology Agency in a law suite of R3 000 000. The service that MI Attorneys provides is of 
                       high professional standard and we are satisfied to have procured their services."</p>
                     <div class="d-flex align-items-center">
                     	<div class="user-img" style="background-image: url(images/client_1.png)"></div>
@@ -138,7 +156,7 @@
                 <div class="testimony-wrap py-4">
                   <div class="text">
                     <p class="mb-4" style="color:#000000; font-style:normal; font-style: italic; font-weight:500; font-size: small;">"MI Attorneys assisted Thlago Environmental Health & Safety Solutions
-                      Pty(Ltd) with giving advice on labour law and resolving labour issues with our
+                      (Pty)Ltd with giving advice on labour law and resolving labour issues with our
                       employees. And drafting a legal opinion regarding the Protection of Access to
                       Information Act."</p>
                     <div class="d-flex align-items-center">
@@ -251,10 +269,9 @@
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
-
-            <p>
-  Copyright &copy;<script>document.write(new Date().getFullYear()); </script> MiAttorneys. All rights reserved | Developed by Thabiso</a>
-  </p>
+        <p>
+          Copyright &copy;<script>document.write(new Date().getFullYear()); </script> MiAttorneys. All rights reserved | Developed by Thabiso</a>
+        </p>
           </div>
         </div>
       </div>

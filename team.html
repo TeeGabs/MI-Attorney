@@ -21,13 +21,31 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+		window.onscroll = function() {scrollFunction()}
+		
+		function scrollFunction() {
+		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+			document.getElementsByClassName("logoStyle")[0].style.color = "black";
+			document.getElementsByClassName("logoStyle")[1].style.backgroundColor = "black";
+			document.getElementsByClassName("logoStyle")[2].style.backgroundColor = "black";
+			document.getElementsByClassName("logoStyle")[3].style.backgroundColor = "black";
+		}else{
+			document.getElementsByClassName("logoStyle")[0].style.color = "white";
+			document.getElementsByClassName("logoStyle")[1].style.backgroundColor = "white";
+			document.getElementsByClassName("logoStyle")[2].style.backgroundColor = "white";
+			document.getElementsByClassName("logoStyle")[3].style.backgroundColor = "white";}
+		}
+	  </script>
+
   </head>
   <body>
     
 	  <nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-		 <a class="navbar-brand" href="index.html"><img src="images\M.I Attorneys logo 4_1.png" class="logo">
-		</a> 
+		  <a class="navbar-brand" href="index.html"><img src="images\M.I Attorneys logo 4_1.png" class="logo">
+		  </a> 
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -43,10 +61,10 @@
 	        </ul>
 	      </div>
 		  <div class="mi">
-			<p style="float: center; margin-bottom: 0px; color: rgb(0, 0, 0);">M.I Attorneys</p>
-            <button style="float: center; height: 10px; width: 10px; margin-left: 20px; background-color: rgb(0, 0, 0); border-radius: 50%; border: none;"><span></span> </button>
-            <button style="float: center; height: 10px; width: 10px; background-color: rgb(0, 0, 0); border-radius: 50%; border: none;"><span></span> </button>
-            <button style="float: center; height: 10px; width: 10px; background-color: rgb(0, 0, 0); border-radius: 50%; border: none;"><span></span> </button>
+			<p class="logoStyle" style="float: center; margin-bottom: 0px;">M.I Attorneys</p>
+            <button class="logoStyle" style="float: center; height: 10px; width: 10px; margin-left: 20px; border-radius: 50%; border: none;"><span></span> </button>
+          	<button class="logoStyle" style="float: center; height: 10px; width: 10px; border-radius: 50%; border: none;"><span></span> </button>
+          	<button class="logoStyle" style="float: center; height: 10px; width: 10px; border-radius: 50%; border: none;"><span></span> </button>
 		  </div>
 	    </div>
 	  </nav>
@@ -57,7 +75,7 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
           <div class="col-md-9 ftco-animate pb-5 text-center">
-            <h1 class="mb-3 bread" style="color:rgb(0, 72, 160)">Meet our Team</h1>
+            <!--<h1 class="mb-3 bread" style="color:rgb(0, 72, 160)">Meet our Team</h1> -->
           </div>
         </div>
       </div>
@@ -67,7 +85,7 @@
     	<div class="container-fluid px-md-5">
     		<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 text-center heading-section ftco-animate">
-          	<span class="subheading">Our Attorney</span>
+          	<span class="subheading" style="padding-top: 20px;">Our Attorney</span>
             <h2 class="mb-4">Our Legal Attorneys</h2>
           </div>
         </div>
@@ -86,12 +104,14 @@
 	                <blockquote>
 					  <h5 class="accolades-heading">Itani`s Accolades:</h5>
 	                  <ul class="accolades-list">
-						<li>LLB(UNIVEN), Certificate in Banking & Financial Markets(Wits) & Certificate in Mining & Prospecting Law(WIts)</li>
+						<li>LLB(UNIVEN), Certificate in Banking & Financial Markets(Wits) and Certificate in Mining & Prospecting Law(WIts)</li>
+						<li>Wealth of experience in Magistrate Courts, High Court, Labour Court, Supreme Court, etc.</li>
+						<li>Competent in Administrative & Public Law, Commercial Advisory, Employment Law, etc.</li>
 					  </ul>
 	                </blockquote>
 	                <div class="author d-flex">
 	                  <div class="image align-self-center">
-	                    <img src="images/Director.png" alt="Director">
+	                    <img src="" alt="">
 	                  </div>
 	                </div>
 	              </div>
@@ -99,8 +119,8 @@
 	          </div>
         	</div>
 			<div class="col-lg-3 col-sm-6">
-        		<div class="block-2 ftco-animate">
-	            <div class="flipper">
+        	   <div class="block-2 ftco-animate">
+	              <div class="flipper">
 	              <div class="front" style="background-color: rgb(3, 148, 150);">
 	                <div class="box">
 	                  <h2>Konanani Tshivase</h2>
@@ -152,7 +172,7 @@
 	                </div>
 	              </div>
 	            </div>
-	          </div>
+				</div>
         	</div>
 			<div class="col-lg-3 col-sm-6">
         		<div class="block-2 ftco-animate">
@@ -197,34 +217,6 @@
 					  <h5 class="accolades-heading">Roise`s Accolades:</h5>
 					    <ul class="accolades-list">
 						  <li>LLB(UNISA), HC Law(UNISA) & MA Dispute Resolution(Independent College Dublin).</li>
-						  <li>.....</li>
-						</ul>
-	                </blockquote>
-	                <div class="author d-flex">
-	                  <div class="image align-self-center">
-	                    <img src="images/Roice.png" alt="Mr roise Dembo - Candidate Attorney">
-	                  </div>
-	                  <div class="name align-self-center ml-3">Roise Dembo<span class="position">Candidate Attorney</span></div>
-	                </div>
-	              </div>
-	            </div>
-	          </div>
-        	</div>
-        	<div class="col-lg-3 col-sm-6">
-        		<div class="block-2 ftco-animate">
-	            <div class="flipper">
-	              <div class="front" style="background-image: url(/images/person_4.jpg); background-color: rgb(3, 148, 150);">
-	                <div class="box">
-	                  <h2>Solomon Matamba</h2>
-	                  <p>Candidate Legal Practitioner</p>
-	                </div>
-	              </div>
-	              <div class="back">
-	                <!-- back content -->
-	                <blockquote>
-						<h5 class="accolades-heading">Solomon`s Accolades:</h5>
-					    <ul class="accolades-list">
-						  <li>LLB(UJ), A.I(UJ), African Studies(UJ) & Project Management(Trancend).</li>
 						  <li>Engages in Legal Research, Document Drafting, and Case preparation across various practice areas.</li>
 						  <li>Assists with Client communication, Court filling and Appearances, and Administrative tasks.</li>
 						</ul>
@@ -238,8 +230,36 @@
 	            </div>
 	          </div>
         	</div>
+        	<div class="col-lg-3 col-sm-6">
+        	  <div class="block-2 ftco-animate">
+	              <div class="flipper">
+	                <div class="front" style="background-image: url(/images/person_4.jpg); background-color: rgb(3, 148, 150);">
+	                 <div class="box">
+	                  <h2>Solomon Matamba</h2>
+	                  <p>Candidate Legal Practitioner</p>
+	                </div>
+	              </div>
+	                <div class="back">
+	                    <!-- back content -->
+	                  <blockquote>
+						<h5 class="accolades-heading">Solomon`s Accolades:</h5>
+					    <ul class="accolades-list">
+						  <li>LLB(UJ), A.I(UJ), African Studies(UJ) & Project Management(Trancend).</li>
+						  <li>Engages in Legal Research, Document Drafting, and Case preparation across various practice areas.</li>
+						  <li>Assists with Client communication, Court filling and Appearances, and Administrative tasks.</li>
+						</ul>
+	                  </blockquote>
+	                  <div class="author d-flex">
+	                    <div class="image align-self-center">
+	                      <img src="" alt="">
+	                    </div>
+	                  </div>
+	               </div>
+	             </div>
+	          </div>
+        	</div>
 			<div class="col-lg-3 col-sm-6">
-        		<div class="block-2 ftco-animate">
+        	<div class="block-2 ftco-animate">
 	            <div class="flipper">
 	              <div class="front" style="background-color: rgb(3, 148, 150);">
 	                <div class="box">
@@ -248,20 +268,19 @@
 	                </div>
 	              </div>
 	              <div class="back">
-	                <!-- back content -->
-	                <blockquote>
+	                  <blockquote>
 						<h5 class="accolades-heading">Winny`s Accolades:</h5>
 					    <ul class="accolades-list">
-						  <li>NDip in Accounting(UJ) & Advanced Diploma in Accounting Sciences(UNISA).</li>
+						  <li>NDip in Accounting(UJ) & AdDip in Accounting Sciences(UNISA).</li>
 						  <li>Plays a crucial role in managing Financial matters and ensuring compliance with tax regulations.</li>
-						  <li>Responsible for maintaining accurate financial records, preparing financial statements, and managing budgets.</li>
+						 <li>Responsible for maintaining accurate financial records, preparing financial statements, and managing budgets.</li>
 						</ul>
-	                </blockquote>
-	                <div class="author d-flex">
-	                  <div class="image align-self-center">
-	                    <img src="" alt="">
-	                  </div>
-	                </div>
+	                  </blockquote>
+	                	<div class="author d-flex">
+	                  	    <div class="image align-self-center">
+	                    	   <img src="" alt="">
+	                  	    </div>
+	                 	</div>
 	              </div>
 	            </div>
 	          </div>
@@ -297,33 +316,32 @@
         	</div>
 			<div class="col-lg-3 col-sm-6">
         		<div class="block-2 ftco-animate">
-	            <div class="flipper">
-					<div class="front" style="background-color: rgb(3, 148, 150);">
-						<div class="box">
-						  <h2>Stanley Munyangane</h2>
-						  <p>IT Technician</p>
-						</div>
-					  </div>
-					  <div class="back">
-						<!-- back content -->
-						<blockquote>
-							<h5 class="accolades-heading">Stanley`s Accolades:</h5>
-							<ul class="accolades-list">
-							  <li>BTech in Information Technology, CompTIA A+ & CompTIA N+(Pearson Institute).</li>
-							  <li>Responsible for maintaining and troubleshooting hardware and software systems.</li>
-							  <li>Oversees cybersecurity measures to safeguard sensitive information and prevent data breaches.</li>
-							</ul>
-						</blockquote>
-						<div class="author d-flex">
-						  <div class="image align-self-center">
-							<img src="" alt="">
-						  </div>
-						</div>
+	                <div class="flipper">
+					     <div class="front" style="background-color: rgb(3, 148, 150);">
+						    <div class="box">
+						        <h2>Stanley Munyangane</h2>
+						  		<p>IT Technician</p>
+							</div>
+					  	</div>
+					  	<div class="back">
+							<!-- back content -->
+							<blockquote>
+								<h5 class="accolades-heading">Stanley`s Accolades:</h5>
+									<ul class="accolades-list">
+										<li>BTech in Information Technology, CompTIA A+ & CompTIA N+(Pearson Institute).</li>
+										<li>Responsible for maintaining and troubleshooting hardware and software systems.</li>
+										<li>Oversees cybersecurity measures to safeguard sensitive information and prevent data breaches.</li>
+									</ul>
+							</blockquote>
+							<div class="author d-flex">
+						  		<div class="image align-self-center">
+						  		</div>
+							</div>
+					  	</div>
 					  </div>
 	            </div>
         	</div>
         </div>
-    	</div>
     </section>
     
     <footer class="ftco-footer ftco-bg-dark ftco-section">

@@ -9,7 +9,9 @@
     
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -21,6 +23,25 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script>
+      window.onscroll = function() {scrollFunction()}
+      
+      function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementsByClassName("logoStyle")[0].style.color = "black";
+          document.getElementsByClassName("logoStyle")[1].style.backgroundColor = "black";
+          document.getElementsByClassName("logoStyle")[2].style.backgroundColor = "black";
+          document.getElementsByClassName("logoStyle")[3].style.backgroundColor = "black";
+      }
+      else{
+          document.getElementsByClassName("logoStyle")[0].style.color = "white";
+          document.getElementsByClassName("logoStyle")[1].style.backgroundColor = "white";
+          document.getElementsByClassName("logoStyle")[2].style.backgroundColor = "white";
+          document.getElementsByClassName("logoStyle")[3].style.backgroundColor = "white";}
+      }
+    </script>
+
   </head>
   <body>
     
@@ -43,10 +64,10 @@
 	        </ul>
 	      </div>
         <div class="mi">
-          <p style="float: center; margin-bottom: 0px; color: rgb(0, 0, 0);">M.I Attorneys</p>
-          <button style="float: center; height: 10px; width: 10px; margin-left: 20px; background-color: rgb(0, 0, 0); border-radius: 50%; border: none;"><span></span> </button>
-          <button style="float: center; height: 10px; width: 10px; background-color: rgb(0, 0, 0); border-radius: 50%; border: none;"><span></span> </button>
-          <button style="float: center; height: 10px; width: 10px; background-color: rgb(0, 0, 0); border-radius: 50%; border: none;"><span></span> </button>
+          <p class="logoStyle" style="float: center; margin-bottom: 0px;">M.I Attorneys</p>
+          <button class="logoStyle" style="float: center; height: 10px; width: 10px; margin-left: 20px; border-radius: 50%; border: none;"><span></span> </button>
+          <button class="logoStyle" style="float: center; height: 10px; width: 10px; border-radius: 50%; border: none;"><span></span> </button>
+          <button class="logoStyle" style="float: center; height: 10px; width: 10px; border-radius: 50%; border: none;"><span></span> </button>
         </div>
 	    </div>
 	  </nav>
@@ -67,13 +88,13 @@
     	<div class="container">
     		<div class="row d-flex">
     			<div class="col-md-6 d-flex">
-    				<div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end" style="background-image:url();">    					
+    				  <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-end" style="background-image:url('images/Great-Blogs-for-Your-Law-Practice.png');">
     				</div>
     			</div>
     			<div class="col-md-6 pl-md-5 py-md-5">
     				<div class="row justify-content-start pt-3 pb-3">
 		          <div class="col-md-12 heading-section ftco-animate">
-		            <h2 class="mb-4" style="color:rgb(0, 0, 0); text-decoration-thickness: bold;">Who we are:</h2>
+		            <h2 class="mb-4" style="color:rgb(0, 0, 0); text-decoration-thickness: bold;">Who are we?</h2>
 		            <p style="color:#000000; font-style:normal;">Munyangane Itani Attorneys Incorporated is a distinguished boutique Law Firm headquartered in Pretoria, Gauteng, South Africa. 
                    Despite being a small-sized law firm, we boast significant national reach facilitated by a robust network of associates and correspondent professionals. 
                    This expansive network enables us to exert considerable influence in both commercial and litigation spheres across the Republic of South Africa. 
@@ -91,34 +112,44 @@
                   fostering growth, both for our clients and ourselves. This commitment underscores one of the fundamental pillars upon which our practice is built.
                 </p> <b></b>
 		          </div>
+              <div class="tabulation-2 mt-4">
+                <ul class="nav nav-pills nav-fill d-md-flex d-block">
+                  <li class="nav-item mb-md-0 mb-2">
+                    <a class="nav-link active py-2" data-toggle="tab" href="#mission">Our Mission</a>
+                  </li>
+                  <li class="nav-item px-lg-2 mb-md-0 mb-2">
+                    <a class="nav-link py-2" data-toggle="tab" href="#vision">Our Vision</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link py-2 mb-md-0 mb-2" data-toggle="tab" href="#values">Our Values</a>
+                  </li>
+                </ul>
+                <div class="tab-content bg-light rounded mt-2">
+                  <div class="tab-pane container p-0 active" id="mission">
+                    <p>At Munyangane Itani Inc., our mission is to provide exceptional legal services that help our clients achieve their goals. 
+                      We are committed to delivering practical, innovative, and cost-effective solutions tailored to each client's unique needs. 
+                      Our team of talented and dedicated professionals works collaboratively across practice areas to exceed client expectations. 
+                      We uphold the highest standards of integrity, professionalism, and client service in everything that we do.</p>
+                  </div>
+                  <div class="tab-pane container p-0 fade" id="vision">
+                    <p>A Legal firm having a sound reputation for high ethical standards, professionalism and public spiritedness.</p>
+                  </div>
+                  <div class="tab-pane container p-0 fade" id="values">
+                    <p>Integrity and professionalism </br>
+                      We maintain the highest ethical standards in our decisions, actions, and communications.</br>
+                      INNOVATION </br>
+                      We challenge ourselves to learn, to implement modern and creative solutions, and to exceed all 
+                      expectations in the continued pursuit of excellence. </br>
+                      COMMUNITY </br>
+                      We strive to create a positive environment that fosters the well-being of all members of our firm, our families, our clients, 
+                      and our communities.
+                      </p>
+                  </div>
+                </div>
+              </div>
 		        </div>
 	        </div>
         </div>
-                   </p>
-                   <div class="tabulation-2 mt-4">
-                    <ul class="nav nav-pills nav-fill d-md-flex d-block">
-                      <li class="nav-item mb-md-0 mb-2">
-                        <a class="nav-link active py-2" data-toggle="tab" href="#mission">Our Mission</a>
-                      </li>
-                      <li class="nav-item px-lg-2 mb-md-0 mb-2">
-                        <a class="nav-link py-2" data-toggle="tab" href="#vision">Our Vision</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link py-2 mb-md-0 mb-2" data-toggle="tab" href="#values">Our Values</a>
-                      </li>
-                    </ul>
-                    <div class="tab-content bg-light rounded mt-2">
-                      <div class="tab-pane container p-0 active" id="mission">
-                        <p>M.I Attorneys mission statement will be added soon.</p>
-                      </div>
-                      <div class="tab-pane container p-0 fade" id="vision">
-                        <p>M.I Attorneys Vision statement will be added soon.</p>
-                      </div>
-                      <div class="tab-pane container p-0 fade" id="values">
-                        <p>M.I Attorneys values will be added soon.</p>
-                      </div>
-                    </div>
-                  </div>
     	</div>
     </section>
 
